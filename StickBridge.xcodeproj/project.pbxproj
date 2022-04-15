@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		941DCBEB2804C7340016112A /* TouchAreaShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941DCBEA2804C7340016112A /* TouchAreaShape.swift */; };
+		94291AF727F1E7270056E66D /* KeyFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94291AF627F1E7270056E66D /* KeyFrame.swift */; };
+		94291B0227F324E00056E66D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94291B0127F324E00056E66D /* ViewExtension.swift */; };
+		94291B0627F337E50056E66D /* PillarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94291B0527F337E50056E66D /* PillarsView.swift */; };
+		946AF03927EB7A2F008FC369 /* GameCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF03827EB7A2F008FC369 /* GameCore.swift */; };
+		946C39D027F750780051E992 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C39CF27F750780051E992 /* Logger.swift */; };
+		9491C85427DF9BE80008EC7A /* StickBridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491C85327DF9BE80008EC7A /* StickBridgeApp.swift */; };
+		9491C85827DF9BE90008EC7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9491C85727DF9BE90008EC7A /* Assets.xcassets */; };
+		9491C85B27DF9BE90008EC7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9491C85A27DF9BE90008EC7A /* Preview Assets.xcassets */; };
+		9491C86227DF9E8C0008EC7A /* PillarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491C86127DF9E8B0008EC7A /* PillarView.swift */; };
+		94C57D0D27E105CA00C2B7BD /* PillarGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C57D0C27E105CA00C2B7BD /* PillarGenerator.swift */; };
+		94D4FD272806D18E00523E86 /* CaseIterableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4FD262806D18E00523E86 /* CaseIterableExtension.swift */; };
+		94D4FD35280706E700523E86 /* ActionFeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4FD34280706E700523E86 /* ActionFeedbackGenerator.swift */; };
+		94D4FD382807492000523E86 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94D4FD372807492000523E86 /* success.mp3 */; };
+		94D4FD3A2807497B00523E86 /* failure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94D4FD392807497B00523E86 /* failure.mp3 */; };
+		94D4FD3E280749C300523E86 /* rustle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94D4FD3D280749C300523E86 /* rustle.mp3 */; };
+		94D4FD4428083C9200523E86 /* charging.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94D4FD4328083C9200523E86 /* charging.mp3 */; };
+		94D4FD482809908600523E86 /* AppStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4FD472809908600523E86 /* AppStorageKey.swift */; };
+		94D4FD4B280993E500523E86 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4FD4A280993E500523E86 /* UIConstants.swift */; };
+		94D4FD4E2809E55A00523E86 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94D4FD502809E55A00523E86 /* Localizable.strings */; };
+		94D537EF280432D300132542 /* GameOverOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D537EE280432D300132542 /* GameOverOverlay.swift */; };
+		94EB18692805BF0900EC14A6 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EB18682805BF0900EC14A6 /* Globals.swift */; };
+		94EB186C2805C9F300EC14A6 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EB186B2805C9F300EC14A6 /* BackgroundGradient.swift */; };
+		94EB186E2806063100EC14A6 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EB186D2806063100EC14A6 /* ColorPickerView.swift */; };
+		94F28FEA27E36D900068CB39 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F28FE927E36D900068CB39 /* Config.swift */; };
+		94F28FED27E36E800068CB39 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F28FEC27E36E800068CB39 /* BallView.swift */; };
+		94F28FEF27E37A440068CB39 /* BridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F28FEE27E37A440068CB39 /* BridgeView.swift */; };
+		94F28FF227E37B8E0068CB39 /* Pillar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F28FF127E37B8E0068CB39 /* Pillar.swift */; };
+		94F28FF427E37BF00068CB39 /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F28FF327E37BF00068CB39 /* GameFieldView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		941DCBEA2804C7340016112A /* TouchAreaShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchAreaShape.swift; sourceTree = "<group>"; };
+		94291AF627F1E7270056E66D /* KeyFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrame.swift; sourceTree = "<group>"; };
+		94291AF827F1F0A10056E66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94291B0127F324E00056E66D /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		94291B0527F337E50056E66D /* PillarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillarsView.swift; sourceTree = "<group>"; };
+		946AF03827EB7A2F008FC369 /* GameCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCore.swift; sourceTree = "<group>"; };
+		946C39CF27F750780051E992 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		9491C85027DF9BE80008EC7A /* StickBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9491C85327DF9BE80008EC7A /* StickBridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickBridgeApp.swift; sourceTree = "<group>"; };
+		9491C85727DF9BE90008EC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9491C85A27DF9BE90008EC7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9491C86127DF9E8B0008EC7A /* PillarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillarView.swift; sourceTree = "<group>"; };
+		94C57D0C27E105CA00C2B7BD /* PillarGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillarGenerator.swift; sourceTree = "<group>"; };
+		94D4FD262806D18E00523E86 /* CaseIterableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseIterableExtension.swift; sourceTree = "<group>"; };
+		94D4FD34280706E700523E86 /* ActionFeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFeedbackGenerator.swift; sourceTree = "<group>"; };
+		94D4FD372807492000523E86 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		94D4FD392807497B00523E86 /* failure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failure.mp3; sourceTree = "<group>"; };
+		94D4FD3D280749C300523E86 /* rustle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rustle.mp3; sourceTree = "<group>"; };
+		94D4FD4328083C9200523E86 /* charging.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = charging.mp3; sourceTree = "<group>"; };
+		94D4FD472809908600523E86 /* AppStorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKey.swift; sourceTree = "<group>"; };
+		94D4FD4A280993E500523E86 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		94D4FD4F2809E55A00523E86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94D4FD512809E55D00523E86 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94D4FD522809E55D00523E86 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94D537EE280432D300132542 /* GameOverOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverOverlay.swift; sourceTree = "<group>"; };
+		94EB18682805BF0900EC14A6 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		94EB186B2805C9F300EC14A6 /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
+		94EB186D2806063100EC14A6 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		94F28FE927E36D900068CB39 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		94F28FEC27E36E800068CB39 /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
+		94F28FEE27E37A440068CB39 /* BridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeView.swift; sourceTree = "<group>"; };
+		94F28FF127E37B8E0068CB39 /* Pillar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pillar.swift; sourceTree = "<group>"; };
+		94F28FF327E37BF00068CB39 /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9491C84D27DF9BE80008EC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		946AF03727EB7A19008FC369 /* GameCore */ = {
+			isa = PBXGroup;
+			children = (
+				946AF03827EB7A2F008FC369 /* GameCore.swift */,
+				94F28FE927E36D900068CB39 /* Config.swift */,
+				94C57D0C27E105CA00C2B7BD /* PillarGenerator.swift */,
+				94D4FD34280706E700523E86 /* ActionFeedbackGenerator.swift */,
+			);
+			path = GameCore;
+			sourceTree = "<group>";
+		};
+		946AF03A27EB7D24008FC369 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94291B0127F324E00056E66D /* ViewExtension.swift */,
+				94D4FD262806D18E00523E86 /* CaseIterableExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9491C84727DF9BE70008EC7A = {
+			isa = PBXGroup;
+			children = (
+				9491C85227DF9BE80008EC7A /* StickBridge */,
+				9491C85127DF9BE80008EC7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9491C85127DF9BE80008EC7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9491C85027DF9BE80008EC7A /* StickBridge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9491C85227DF9BE80008EC7A /* StickBridge */ = {
+			isa = PBXGroup;
+			children = (
+				94F28FF027E37A770068CB39 /* Model */,
+				946AF03727EB7A19008FC369 /* GameCore */,
+				94F28FEB27E36E740068CB39 /* Views */,
+				94EB18672805BEF100EC14A6 /* Helpers */,
+				946AF03A27EB7D24008FC369 /* Extensions */,
+				94EB186A2805BF3300EC14A6 /* Supporting files */,
+				9491C85327DF9BE80008EC7A /* StickBridgeApp.swift */,
+				9491C85927DF9BE90008EC7A /* Preview Content */,
+			);
+			path = StickBridge;
+			sourceTree = "<group>";
+		};
+		9491C85927DF9BE90008EC7A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9491C85A27DF9BE90008EC7A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94D4FD362807490400523E86 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				94D4FD372807492000523E86 /* success.mp3 */,
+				94D4FD392807497B00523E86 /* failure.mp3 */,
+				94D4FD4328083C9200523E86 /* charging.mp3 */,
+				94D4FD3D280749C300523E86 /* rustle.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		94D4FD492809921400523E86 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				94D537EE280432D300132542 /* GameOverOverlay.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		94EB18652805BE4F00EC14A6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				94F28FEC27E36E800068CB39 /* BallView.swift */,
+				9491C86127DF9E8B0008EC7A /* PillarView.swift */,
+				94291B0527F337E50056E66D /* PillarsView.swift */,
+				94F28FEE27E37A440068CB39 /* BridgeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		94EB18662805BE7000EC14A6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				941DCBEA2804C7340016112A /* TouchAreaShape.swift */,
+				94EB186B2805C9F300EC14A6 /* BackgroundGradient.swift */,
+				94EB186D2806063100EC14A6 /* ColorPickerView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		94EB18672805BEF100EC14A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				946C39CF27F750780051E992 /* Logger.swift */,
+				94EB18682805BF0900EC14A6 /* Globals.swift */,
+				94D4FD4A280993E500523E86 /* UIConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		94EB186A2805BF3300EC14A6 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				94D4FD362807490400523E86 /* Sounds */,
+				9491C85727DF9BE90008EC7A /* Assets.xcassets */,
+				94291AF827F1F0A10056E66D /* Info.plist */,
+				94D4FD502809E55A00523E86 /* Localizable.strings */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		94F28FEB27E36E740068CB39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94EB18662805BE7000EC14A6 /* Other */,
+				94D4FD492809921400523E86 /* Overlay */,
+				94EB18652805BE4F00EC14A6 /* Components */,
+				94F28FF527E37D300068CB39 /* GameField */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94F28FF027E37A770068CB39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94F28FF127E37B8E0068CB39 /* Pillar.swift */,
+				94291AF627F1E7270056E66D /* KeyFrame.swift */,
+				94D4FD472809908600523E86 /* AppStorageKey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94F28FF527E37D300068CB39 /* GameField */ = {
+			isa = PBXGroup;
+			children = (
+				94F28FF327E37BF00068CB39 /* GameFieldView.swift */,
+			);
+			path = GameField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9491C84F27DF9BE80008EC7A /* StickBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9491C85E27DF9BE90008EC7A /* Build configuration list for PBXNativeTarget "StickBridge" */;
+			buildPhases = (
+				9491C84C27DF9BE80008EC7A /* Sources */,
+				9491C84D27DF9BE80008EC7A /* Frameworks */,
+				9491C84E27DF9BE80008EC7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickBridge;
+			productName = StickBridge;
+			productReference = 9491C85027DF9BE80008EC7A /* StickBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9491C84827DF9BE80008EC7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					9491C84F27DF9BE80008EC7A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 9491C84B27DF9BE80008EC7A /* Build configuration list for PBXProject "StickBridge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				uk,
+				ru,
+			);
+			mainGroup = 9491C84727DF9BE70008EC7A;
+			productRefGroup = 9491C85127DF9BE80008EC7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9491C84F27DF9BE80008EC7A /* StickBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9491C84E27DF9BE80008EC7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9491C85B27DF9BE90008EC7A /* Preview Assets.xcassets in Resources */,
+				94D4FD3E280749C300523E86 /* rustle.mp3 in Resources */,
+				94D4FD3A2807497B00523E86 /* failure.mp3 in Resources */,
+				94D4FD4E2809E55A00523E86 /* Localizable.strings in Resources */,
+				94D4FD4428083C9200523E86 /* charging.mp3 in Resources */,
+				94D4FD382807492000523E86 /* success.mp3 in Resources */,
+				9491C85827DF9BE90008EC7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9491C84C27DF9BE80008EC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F28FF227E37B8E0068CB39 /* Pillar.swift in Sources */,
+				94F28FEA27E36D900068CB39 /* Config.swift in Sources */,
+				94D4FD35280706E700523E86 /* ActionFeedbackGenerator.swift in Sources */,
+				94F28FED27E36E800068CB39 /* BallView.swift in Sources */,
+				94F28FEF27E37A440068CB39 /* BridgeView.swift in Sources */,
+				94291AF727F1E7270056E66D /* KeyFrame.swift in Sources */,
+				94D4FD482809908600523E86 /* AppStorageKey.swift in Sources */,
+				9491C86227DF9E8C0008EC7A /* PillarView.swift in Sources */,
+				9491C85427DF9BE80008EC7A /* StickBridgeApp.swift in Sources */,
+				94D537EF280432D300132542 /* GameOverOverlay.swift in Sources */,
+				94F28FF427E37BF00068CB39 /* GameFieldView.swift in Sources */,
+				946C39D027F750780051E992 /* Logger.swift in Sources */,
+				946AF03927EB7A2F008FC369 /* GameCore.swift in Sources */,
+				941DCBEB2804C7340016112A /* TouchAreaShape.swift in Sources */,
+				94EB18692805BF0900EC14A6 /* Globals.swift in Sources */,
+				94C57D0D27E105CA00C2B7BD /* PillarGenerator.swift in Sources */,
+				94EB186E2806063100EC14A6 /* ColorPickerView.swift in Sources */,
+				94D4FD272806D18E00523E86 /* CaseIterableExtension.swift in Sources */,
+				94291B0627F337E50056E66D /* PillarsView.swift in Sources */,
+				94D4FD4B280993E500523E86 /* UIConstants.swift in Sources */,
+				94EB186C2805C9F300EC14A6 /* BackgroundGradient.swift in Sources */,
+				94291B0227F324E00056E66D /* ViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94D4FD502809E55A00523E86 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D4FD4F2809E55A00523E86 /* en */,
+				94D4FD512809E55D00523E86 /* ru */,
+				94D4FD522809E55D00523E86 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9491C85C27DF9BE90008EC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9491C85D27DF9BE90008EC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9491C85F27DF9BE90008EC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StickBridge/Preview Content\"";
+				DEVELOPMENT_TEAM = 37D9383K7L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StickBridge/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mike.makhovyk.StickBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9491C86027DF9BE90008EC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StickBridge/Preview Content\"";
+				DEVELOPMENT_TEAM = 37D9383K7L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StickBridge/Supporting files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mike.makhovyk.StickBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9491C84B27DF9BE80008EC7A /* Build configuration list for PBXProject "StickBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9491C85C27DF9BE90008EC7A /* Debug */,
+				9491C85D27DF9BE90008EC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9491C85E27DF9BE90008EC7A /* Build configuration list for PBXNativeTarget "StickBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9491C85F27DF9BE90008EC7A /* Debug */,
+				9491C86027DF9BE90008EC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9491C84827DF9BE80008EC7A /* Project object */;
+}
